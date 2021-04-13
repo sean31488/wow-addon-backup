@@ -2,23 +2,23 @@
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npm run electron:serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+./node_modules/.bin/vue-cli-service electron:build --windows
 ```
 
-### Lints and fixes files
+### Enable Google drive backup
+1. Edit .env file (environment variable)
 ```
-yarn lint
+VUE_APP_GOOGLE_CLIENT_ID=your google api client ID
+VUE_APP_GOOGLE_CLIENT_SECRET=your google api client secret
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+2. Compiles and minifies for production
